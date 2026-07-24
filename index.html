@@ -264,9 +264,10 @@ transform:translateY(-120vh);
 📍 Aguas del Pino
 </div>
 
-<a class="calendar" href="Boda.ics">
+  <a class="calendar" href="#" onclick="addCalendar(event)">
 📅 Añadir al calendario
 </a>
+
 
 <a class="maps"
 href="https://maps.google.com/?q=Aguas+del+Pino"
@@ -281,6 +282,50 @@ Os esperamos para compartir uno de los días más importantes de nuestra vida �
 </div>
 
 </div>
+<script>
 
+function addCalendar(e){
+
+    e.preventDefault();
+
+    const ua = navigator.userAgent.toLowerCase();
+
+    const isiPhone =
+        /iphone|ipad|ipod/.test(ua);
+
+    const isAndroid =
+        /android/.test(ua);
+
+    // ---------- Android ----------
+    if(isAndroid){
+
+        const google =
+        "https://calendar.google.com/calendar/render?action=TEMPLATE"+
+        "&text="+encodeURIComponent("Boda Aitor y Desire")+
+        "&dates=20270731T180000Z/20270731T220000Z"+
+        "&location="+encodeURIComponent("Aguas del Pino")+
+        "&details="+encodeURIComponent("¡Os esperamos!");
+
+        window.location.href=google;
+
+        return;
+
+    }
+
+    // ---------- Apple ----------
+    if(isiPhone){
+
+        window.location.href="Boda.ics";
+
+        return;
+
+    }
+
+    // ---------- PC y resto ----------
+    window.location.href="Boda.ics";
+
+}
+
+</script>
 </body>
 </html>
