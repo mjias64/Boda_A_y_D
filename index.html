@@ -1,0 +1,290 @@
+# `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aitor & Desire | Save the Date</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:linear-gradient(180deg,#fdfaf7,#f7efe8);
+
+font-family:Montserrat,sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+overflow:hidden;
+
+}
+
+.card{
+
+width:92%;
+
+max-width:520px;
+
+background:white;
+
+padding:50px;
+
+border-radius:25px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+text-align:center;
+
+position:relative;
+
+animation:fade 1.5s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:60px;
+
+font-weight:600;
+
+color:#8f5b43;
+
+}
+
+h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:28px;
+
+margin-top:8px;
+
+font-weight:400;
+
+}
+
+.line{
+
+width:120px;
+
+height:2px;
+
+background:#cfa98f;
+
+margin:25px auto;
+
+}
+
+.fecha{
+
+font-size:34px;
+
+font-weight:600;
+
+margin-top:10px;
+
+}
+
+.hora{
+
+font-size:22px;
+
+margin-top:15px;
+
+}
+
+.lugar{
+
+font-size:22px;
+
+margin-top:10px;
+
+margin-bottom:35px;
+
+}
+
+button,a{
+
+display:block;
+
+width:100%;
+
+padding:18px;
+
+margin-top:18px;
+
+border-radius:40px;
+
+font-size:19px;
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.calendar{
+
+background:#8f5b43;
+
+color:white;
+
+}
+
+.calendar:hover{
+
+background:#744632;
+
+}
+
+.maps{
+
+background:white;
+
+border:2px solid #8f5b43;
+
+color:#8f5b43;
+
+}
+
+.maps:hover{
+
+background:#8f5b43;
+
+color:white;
+
+}
+
+.footer{
+
+margin-top:40px;
+
+font-size:15px;
+
+color:#777;
+
+}
+
+.heart{
+
+position:absolute;
+
+font-size:24px;
+
+animation:float 8s linear infinite;
+
+opacity:.18;
+
+}
+
+@keyframes float{
+
+from{
+
+transform:translateY(100vh);
+
+}
+
+to{
+
+transform:translateY(-120vh);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart" style="left:10%;">🤍</div>
+<div class="heart" style="left:25%;animation-delay:2s;">🤍</div>
+<div class="heart" style="left:50%;animation-delay:4s;">🤍</div>
+<div class="heart" style="left:75%;animation-delay:1s;">🤍</div>
+<div class="heart" style="left:90%;animation-delay:6s;">🤍</div>
+
+<div class="card">
+
+<h1>Aitor & Desire</h1>
+
+<h2>¡Nos casamos!</h2>
+
+<div class="line"></div>
+
+<div class="fecha">
+31 Julio 2027
+</div>
+
+<div class="hora">
+🕗 20:00
+</div>
+
+<div class="lugar">
+📍 Aguas del Pino
+</div>
+
+<a class="calendar" href="boda.ics">
+📅 Añadir al calendario
+</a>
+
+<a class="maps"
+href="https://maps.google.com/?q=Aguas+del+Pino"
+target="_blank">
+📍 Cómo llegar
+</a>
+
+<div class="footer">
+
+Os esperamos para compartir uno de los días más importantes de nuestra vida ❤️
+
+</div>
+
+</div>
+
+</body>
+</html>
+```
